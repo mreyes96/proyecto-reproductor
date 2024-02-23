@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de Música Local</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Inicio de Sesión</h2>
+        <form class="login-form" action="#">
+          <input type="text" name="usuario" placeholder="Usuario" required>
+          <input type="password" name="contraseña" placeholder="Contraseña" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="submit" value="Iniciar Sesión">
+        </form>
+
+        <h2>Búsqueda</h2>
+        <form class="busqueda-form" action="#">
+            <input type="text" id="busqueda-cancion" placeholder="Buscar por nombre de la canción">
+            <input type="text" id="busqueda-artista" placeholder="Buscar por nombre del artista">
+            <input type="text" id="busqueda-genero" placeholder="Buscar por género">
+            <input type="button" id="buscar" value="Buscar">
+        </form>
+        
+        <ul id="resultados-busqueda" class="search-results">
+            <!-- Aquí se mostrarán los resultados de la búsqueda -->
+        </ul>
+
+    <div class="ConteFavoritos">
+    <h2>Favoritos</h2>
+      <div class="cancion">
+        <audio src="flowers.mp3"></audio>
+        <img src="flowers.jpg" alt="Imagen de la Canción">
+        <div class="info">
+            <h2>Flowers</h2>
+            <p>Artista: Miley Cyrus</p>
+            <p>Año: 2023</p>
+            <p>Duración: 3:28</p>
+            <p>Género: Pop</p>
+            <div class="botones">
+                <button class="reproducir-btn">Reproducir</button>
+                <button class="pausar-btn">Pausar</button>
+                <button class="adelantar-btn">Adelantar</button>
+                <button class="retroceder-btn">Retroceder</button>
+                <button class="mute-btn">Mute</button>
+                </div>
+        </div>
+    </div>
+    
+
+    <div class="cancion">
+        <audio src="mujeramante.mp3"></audio>
+        <img src="mujeramante.jpg" alt="Imagen de la Canción">
+        <div class="info">
+            <h2>Mujer Amante</h2>
+            <p>Artista: Rata Blanca</p>
+            <p>Año: 1990</p>
+            <p>Duración: 4:52</p>
+            <p>Género: Rock</p>
+            <div class="botones">
+                <button class="reproducir-btn">Reproducir</button>
+                <button class="pausar-btn">Pausar</button>
+                <button class="adelantar-btn">Adelantar</button>
+                <button class="retroceder-btn">Retroceder</button>
+                <button class="mute-btn">Mute</button>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ConteReproductor">
+    <h2>Reproductor</h2>
+    <div class="cancion">
+        <audio src="Musicatuno.mp3"></audio>
+        <img src="tuno.jpg" alt="Imagen de la Canción">
+        <div class="info">
+            <h2>Tu no eres para mi</h2>
+            <p>Artista: Fanny Lu</p>
+            <p>Año: 2008</p>
+            <p>Duración: 2:48</p>
+            <p>Género: Pop</p>
+            <div class="botones">
+            <button class="reproducir-btn">Reproducir</button>
+            <button class="pausar-btn">Pausar</button>
+            <button class="adelantar-btn">Adelantar</button>
+            <button class="retroceder-btn">Retroceder</button>
+            <button class="mute-btn">Mute</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="cancion">
+        <audio src="mañanaserabonito.mp3"></audio>
+        <img src="bonito.jpg" alt="Imagen de la Canción">
+        <div class="info">
+            <h2>Mientras me curo del corazón</h2>
+            <p>Artista: Karol G</p>
+            <p>Año: 2023</p>
+            <p>Duración: 2:30</p>
+            <p>Género: Regueton</p>
+            <div class="botones">
+                <button class="reproducir-btn">Reproducir</button>
+                <button class="pausar-btn">Pausar</button>
+                <button class="adelantar-btn">Adelantar</button>
+                <button class="retroceder-btn">Retroceder</button>
+                <button class="mute-btn">Mute</button>
+                </div>
+        </div>
+    </div>
+
+    
+    <div class="cancion">
+        <audio src="ausencia.mp3"></audio>
+        <img src="ausencia.jpg" alt="Imagen de la Canción">
+        <div class="info">
+            <h2>Ausencia</h2>
+            <p>Artista: Hector Lavoe</p>
+            <p>Año: 1997</p>
+            <p>Duración: 4:59</p>
+            <p>Género: Salsa</p>
+            <div class="botones">
+                <button class="reproducir-btn">Reproducir</button>
+                <button class="pausar-btn">Pausar</button>
+                <button class="adelantar-btn">Adelantar</button>
+                <button class="retroceder-btn">Retroceder</button>
+                <button class="mute-btn">Mute</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="cancion">
+        <audio src="humanos.mp3"></audio>
+        <img src="humanos.jpg" alt="Imagen de la Canción">
+        <div class="info">
+            <h2>Humanos en Marte</h2>
+            <p>Artista: Chayanne</p>
+            <p>Año: 2018</p>
+            <p>Duración: 2:59</p>
+            <p>Género: Pop</p>
+            <div class="botones">
+                <button class="reproducir-btn">Reproducir</button>
+                <button class="pausar-btn">Pausar</button>
+                <button class="adelantar-btn">Adelantar</button>
+                <button class="retroceder-btn">Retroceder</button>
+                <button class="mute-btn">Mute</button>
+                </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+    <div class="ContePlaylist">
+        <h2>Playlist</h2>
+        <ul id="playlist">
+            <!-- Aquí se mostrarán las canciones de la lista de reproducción -->
+        </ul>
+        <div id="playlist-menu">
+            <input type="text" id="cancion-nombre" placeholder="Nombre de la Canción">
+            <input type="text" id="cancion-artista" placeholder="Nombre del Artista">
+            <button id="agregar-cancion">Agregar Canción</button>
+            <button id="eliminar-cancion">Eliminar Canción</button>
+        </div>
+        <h2>Listas de Reproducción</h2>
+
+        <div id="playlists">
+            <div class="playlist" id="pop-playlist">
+              <h3>Pop</h3>
+              <button class="play">Reproducir</button>
+              <button class="pause">Pausa</button>
+              <button class="next">Siguiente</button>
+              <audio class="audio-player">
+                <!-- Pistas de Pop -->
+                <source src="Musicatuno.mp3" type="audio/mpeg">
+                <source src="flowers.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="playlist" id="rock-playlist">
+              <h3>Rock</h3>
+              <button class="play">Reproducir</button>
+              <button class="pause">Pausa</button>
+              <button class="next">Siguiente</button>
+              <audio class="audio-player">
+                <!-- Pistas de Rock -->
+                <source src="mujeramante.mp3" type="audio/mpeg">
+                <source src="autorojo.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="playlist" id="regueton-playlist">
+              <h3>Reguetón</h3>
+              <button class="play">Reproducir</button>
+              <button class="pause">Pausa</button>
+              <button class="next">Siguiente</button>
+              <audio class="audio-player">
+                <!-- Pistas de Reguetón -->
+                <source src="mañanaserabonito.mp3" type="audio/mpeg">
+                <source src="bellakeo.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+          
+    </div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

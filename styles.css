@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+   
+  }
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .login-container h2 {
+    text-align: center;
+  }
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .login-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  hr {
+    background-color: red;
+  }
+  
+  /* Estilos para los resultados de búsqueda */
+.search-results {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para el formulario de búsqueda */
+.busqueda-form input[type="text"],
+.busqueda-form input[type="button"] {
+  margin-bottom: 10px;
+}
+
+.busqueda-form input[type="button"] {
+  padding: 8px 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.busqueda-form input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+
+  .ConteFavoritos {
+    float: left;
+    width: calc(45% - 15px); /* 50% del ancho del contenedor padre menos el espacio para el margen */
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+  .cancion {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 45%;
+    max-width: 30 px; /* Ajustar la altura */
+    
+}
+
+.cancion img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.info p {
+    margin: 0;
+}
+    
+.ConteReproductor {
+        float: right; /* Cambiar a float: right */
+        width: calc(45% - 15px); /* 50% del ancho del contenedor padre menos el espacio para el margen */
+        margin-left: 20px;  /* Cambiar a margin-left */
+        background-color: #23e6e6;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+/* Estilos del texto del reproductor */
+.repro-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los botones de las canciones */
+.cancion .botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cancion .botones button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #040404;
+    color: #f7f5f5;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.cancion .botones button:hover {
+    background-color: #0056b3;
+}
+
+.active {
+    background-color: #ff0000; /* Cambiar a tu color preferido */
+    color: #ffffff; /* Cambiar el color del texto si es necesario */
+    /* Otros estilos que desees aplicar a los botones activos */
+}
+
+
+.ContePlaylist {
+    float: left;
+    width: calc(45% - 15px); /* 50% del ancho del contenedor padre menos el espacio para el margen */
+    margin-right: 20px; 
+    margin-top: 20px; /* Agrega un margen superior */
+    background-color: #a3f7447f;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#playlist-menu {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#playlist-menu input[type="text"] {
+  width: calc(50% - 5px);
+  margin-right: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+#playlist-menu button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#playlist-menu button:hover {
+  background-color: #0056b3;
+}
+/* Estilos para las listas de reproducción */
+/* Estilos para los botones de reproducción */
+.playlist .controls button {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.playlist .controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los botones de reproducción */
+.playlist .controls button {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.playlist .controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el contenedor de listas de reproducción */
+#playlists {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilos para cada lista de reproducción */
+.playlist {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0; /* Color de fondo para resaltar cada lista */
+}
+
+.playlist h3 {
+  margin-top: 0;
+}
+
+.playlist button {
+  display: block; /* Hace que los botones se apilen verticalmente */
+  margin-bottom: 5px; /* Espacio entre botones */
+  cursor: pointer; /* Cambia el cursor para indicar que es clickable */
+}
+
+.songs-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px; /* Espacio adicional después de los botones */
+}
+
+
+
+/* Estilos específicos para los botones de cada lista de reproducción */
+.playlist .controls button {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.playlist .controls button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
